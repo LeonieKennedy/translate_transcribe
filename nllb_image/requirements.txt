@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+lxml
+pandas
+pycountry
+wget
+fasttext
+transformers
+nltk
