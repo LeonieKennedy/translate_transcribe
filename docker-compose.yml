@@ -1,0 +1,22 @@
+version: "3.9"
+services:
+  ui:
+    build:
+      dockerfile: Dockerfile
+      context: ./ui
+    ports:
+      - '3000:3000'
+  nllb:
+    build:
+      dockerfile: Dockerfile
+      context: ./nllb_image
+    ports:
+      - '8000:8000'
+  whisper:
+    build:
+      dockerfile: Dockerfile
+      context: ./whisper_image
+    ports:
+      - '8001:8000'
+
+
